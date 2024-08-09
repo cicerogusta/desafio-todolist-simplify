@@ -22,7 +22,7 @@ class TodoController(private val todoService:TodoService) {
     }
 
     fun update(todo:Todo): List<Todo> {
-       todoService.create(todo)
+       todoService.update(todo)
         return list()
         
     }
