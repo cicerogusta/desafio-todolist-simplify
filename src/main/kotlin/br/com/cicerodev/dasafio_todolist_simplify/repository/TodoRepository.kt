@@ -1,4 +1,4 @@
-package br.com.cicerodev.repository
+package br.com.cicerodev.dasafio_todolist_simplify.repository
 
 import br.com.cicerodev.dasafio_todolist_simplify.entity.Todo
 import org.springframework.data.jpa.repository.JpaRepository
