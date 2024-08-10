@@ -12,5 +12,9 @@ data class Todo(
     var descricao: String = "",
     var realizado: Boolean = false,
     var prioridade: Int = 0
-)
+) {
+    constructor(nome: String, descricao: String, realizado: Boolean, prioridade: Int) : this(0, nome, descricao, realizado, prioridade)
+
+
+}
 
