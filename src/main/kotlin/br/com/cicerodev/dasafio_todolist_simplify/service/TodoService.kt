@@ -1,4 +1,4 @@
-package br.com.cicerodev.desafio_todolist_simplify.service
+package br.com.cicerodev.dasafio_todolist_simplify.service
 
 import org.springframework.stereotype.Service
 import org.springframework.data.domain.Sort

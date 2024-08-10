@@ -1,19 +1,16 @@
 
 package br.com.cicerodev.dasafio_todolist_simplify.entity
-import jakarta.persistence.Entity
-import jakarta.persistence.Table
-import jakarta.persistence.GeneratedValue
-import jakarta.persistence.GenerationType
-import org.springframework.data.annotation.Id
-@Entity
+import jakarta.persistence.*
+
 @Table(name="todos")
+@Entity
 data class Todo(
-    @Id 
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val id: Long;
-    var nome: String = ""
-    var descricao: String = ""
-    var realizado: Boolean = false
+    val id: Long,
+    var nome: String = "",
+    var descricao: String = "",
+    var realizado: Boolean = false,
     var prioridade: Int = 0
 )
 

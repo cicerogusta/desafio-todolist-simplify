@@ -1,4 +1,4 @@
-package br.com.cicerodev.desafio_todolist_simplify.controller
+package br.com.cicerodev.dasafio_todolist_simplify.controller
 
 import org.springframework.web.bind.annotation.RestController
 import org.springframework.web.bind.annotation.RequestMapping
@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PutMapping
 import org.springframework.web.bind.annotation.DeleteMapping
 import org.springframework.web.bind.annotation.PathVariable
-import br.com.cicerodev.desafio_todolist_simplify.service.TodoService
+import br.com.cicerodev.dasafio_todolist_simplify.service.TodoService
 import br.com.cicerodev.dasafio_todolist_simplify.entity.Todo
 
 @RestController
 @RequestMapping("/todos")
-class TodoController(private val todoService:TodoService) {
+class TodoController(private val todoService: TodoService) {
 
     @PostMapping
     fun create(@RequestBody todo: Todo): List<Todo> {
