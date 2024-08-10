@@ -31,6 +31,12 @@ class DasafioTodolistSimplifyApplicationTests {
 
     @Test
     fun testCreateTodoFailure() {
+        webTestClient.post()
+            .uri("/todos")
+            .bodyValue(Todo(nome = "", descricao = "", realizado = false, prioridade = 0 ))
+            .exchange()
+            .expectStatus().isBadRequest
+
     }
 
 }

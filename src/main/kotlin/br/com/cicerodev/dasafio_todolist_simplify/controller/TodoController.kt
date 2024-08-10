@@ -10,13 +10,14 @@ import org.springframework.web.bind.annotation.DeleteMapping
 import org.springframework.web.bind.annotation.PathVariable
 import br.com.cicerodev.dasafio_todolist_simplify.service.TodoService
 import br.com.cicerodev.dasafio_todolist_simplify.entity.Todo
+import jakarta.validation.Valid
 
 @RestController
 @RequestMapping("/todos")
 class TodoController(private val todoService: TodoService) {
 
     @PostMapping
-    fun create(@RequestBody todo: Todo): List<Todo> {
+    fun create(@RequestBody @Valid todo: Todo): List<Todo> {
         todoService.create(todo)
         return list()
 
