@@ -10,7 +10,7 @@
 
 API para gerenciar tarefas (CRUD) que faz parte [desse desafio](https://github.com/simplify-liferay/desafio-junior-backend-simplify) para pessoas desenvolvedoras backend júnior, que se candidatam para a Simplify.
 
-FEITO EM KOTLIN EM DIFERENÇA AO ORIGINAL.
+<h3></> FEITO EM KOTLIN
 
 O projeto foi elaborado com base [nesse vídeo](https://youtu.be/IjProDV001o).
 
